@@ -1,0 +1,161 @@
+body /* style du fond de la page */{
+	background: red;
+	font-family: 'Source code pro', Calibri, serif;
+	margin: 0px;
+	padding: 0px;
+}
+#corps /* style du fond */{
+	background: white;
+	margin-left: 70px;
+	width: 90%;
+	height: 80%;
+}
+.titre h1 /* style du titre du site */{
+	text-align: center;
+	color: white;
+}
+
+/* style du menu déroulant*/
+
+nav {
+	width: 100%;
+	background-color: #424558;
+}
+nav > ul {
+	margin: 0px 0px 0px 280px;
+	padding: 0px;
+}
+nav > ul::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+nav > ul > li {
+	float: left;
+	position: relative;
+}
+nav li {
+	list-style-type: none;
+}
+nav a {
+	display: inline-block;
+	text-decoration: none;
+}
+nav > ul > li > a {
+	padding: 20px 30px;
+	color: #FFF;
+}
+nav > ul > li:hover a {
+	padding: 15px 30px  20px 30px;
+}
+nav li:hover .submenu {
+	display: inline-block;
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	padding: 0px;
+	z-index: 100000;
+}
+.submenu {
+	display: none;
+}
+.submenu li {
+	border-bottom: 1px solid #CCC;
+}
+.submenu li a {
+	padding: 15px 30px;
+	font-size: 13px;
+	color: #222528;
+	width: 270px;
+}
+.submenu li:hover a {
+	color: #EEE;
+	font-weight: bold;
+}
+.menu-membre {
+	border-top: 5px solid #646363
+	background-color: rgba(100, 99, 99, 0.15);
+}
+.menu-membre .submenu {
+	background-color: rgb(153, 153, 153);
+}
+.menu-membre .submenu li:hover {
+	background-color: rgb(120, 111, 111);
+}
+.menu {
+	height: 50px;
+	width: 1219px;
+	background-color: black;
+	margin: 0px 0px 5px 70px;
+}
+.menu > a {
+	display: inline-block;
+	text-align: center;
+	font-size: 25px;
+	color: white;
+	list-style-type: none;
+	text-decoration: none;
+	margin: 8px 15px 0px 60px; 
+}
+
+/* style de la page a propos */
+
+h1.motos /* style du texte de la présentation des motos */{
+	text-align: center;
+}
+.moto table /* paramètre de la div */ {
+	text-align: center;
+	margin-left: 245px;
+}
+.moto img /* taille des images*/{
+	width: 320px;
+	height: 200px;
+}
+.moto p.matt /* couleur text matt*/{
+	color: red;
+}
+.moto p.nath /* couleur text nath*/{
+	color: #4b8aac;
+}
+.moto p.mister /* couleur text mister*/{
+	color: blue;
+}
+
+/* style des vidéos (flux rss) */
+
+.videos {
+	text-align: center;
+}
+
+/* style paragraphe présentation */
+.text_presentation p {
+	text-align: center;
+	font-size: 20px;
+}
+
+/* style pour les publication */
+.publication {
+	margin-top: -6px;
+}
+
+/* Formulaire d'inscription */
+td .Inscription {
+	text-align: right;
+}
+h1.inscription {
+	text-align: center;
+}
+table.inscription {
+	margin-left: 33%;
+}
+input.inscription {
+	width: 240px;
+}
+.error {
+	text-align: center;
+}
+
+/* Formulaire de connexion */
+h1.connexion {
+	text-align: center;
+}
